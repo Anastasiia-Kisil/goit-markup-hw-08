@@ -130,7 +130,7 @@
         </div>
       </section> 
       <!-- Наши работы -->
-       <!-- <section class="section works"> 
+        <section class="section works"> 
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works__list list">
@@ -173,20 +173,27 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>  
       <!-- Наша команда -->
-      <!-- <section class="section team"> 
+      <section class="section team">  
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <div class="team__img">
-                <img
+                <picture>
+                  <source 
+                      srcset="./img/desctop/team/1x/img.webp 1x, ./img/desctop/team/2x/img@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source
+                      srcset="./img/desctop/team/1x/img.jpg 1x, ./img/desctop/team/2x/img@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source 
+                      srcset="./img/tablet/team/1x/img(6).webp 1x, ./img/tablet/team/2x/img@2x(5).webp 2x" media="(min-width: 768px)" type="image/webp">
+                  <source 
+                      srcset="./img/tablet/team/1x/img.jpg 1x, ./img/tablet/team/2x/img@2x.jpg 2x" media="(min-width: 768px)">
+                  <img
                   src="./img/desctop/team/1x/img.jpg"
-                  alt="Участник команды"
-                  width="270"
-                  height="260"
-                />
+                  alt="Участник команды">
+                </picture>
               </div>
               <div class="team__description">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -355,7 +362,7 @@
             </li>
           </ul>
         </div>
-      </section> --> -->
+      </section> 
       <!-- Постоянные клиенты -->
       <!-- <section class="section clients">
           <h2 class="section__title">Постоянные клиенты</h2>
