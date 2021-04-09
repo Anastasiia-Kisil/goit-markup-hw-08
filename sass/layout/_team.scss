@@ -2,7 +2,7 @@
   background-color: var(--bg-item-color);
 
   &__img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   &__item {
