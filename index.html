@@ -38,6 +38,11 @@
               <a class="navigation__link link" href="">Контакты</a>
             </li>
           </ul>
+          <button class="burger-button" type="button" data-menu-button>
+            <svg class="burger-button__icon">
+              <use href="./img/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="contact list">
           <li class="contact__list">
@@ -57,12 +62,17 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu"> 
-        <button class="burger-button" type="button">
-          <svg class="burger-button__icon">
-            <use href="./img/icons.svg#icon-menu_24px"></use>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-button" data-menu-close>
+          <svg class="mobile-menu__icon">
+            <use href="./img/icons.svg#icon-close_24px"></use>
           </svg>
         </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Студия</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Портфолио</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакты</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -136,12 +146,12 @@
           <ul class="works__list list">
             <li class="works__item">
               <div class="thumb">
-                <img
-                src="./img/comp/about/1x/img.jpg"
-                alt="програмирование"
-                width="370"
-                height="294"
-              /> 
+                <picture>
+                  <source srcset="./img/comp/about/1x/img.webp 1x, ./img/comp/about/2x/img@2x.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp">
+                  <source srcset="./img/comp/about/1x/img.jpg 1x, ./img/comp/about/2x/img@2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./img/comp/about/1x/img.jpg" alt="Участник команды">
+                </picture>
                <div class="thumb__label">
                 <h3 class="thumb__description" >Десктопные приложения</h3>
               </div>
@@ -149,24 +159,26 @@
             </li>
             <li class="works__item">
               <div class="thumb">
-                <img 
-                src="./img/comp/about/1x/img-1.jpg"
-                alt="смартфоны"
-                width="370"
-                height="294"
-              /> <div class="thumb__label">
+                <picture>
+                  <source srcset="./img/comp/about/1x/img-1.webp 1x, ./img/comp/about/2x/img@2x-1.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp">
+                  <source srcset="./img/comp/about/1x/img-1.jpg 1x, ./img/comp/about/2x/img@2x-1.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./img/comp/about/1x/img-1.jpg" alt="Участник команды">
+                </picture>
+                 <div class="thumb__label">
                 <h3 class="thumb__description" >Мобильные приложения</h3>
               </div>
               </div>
             </li>
             <li class="works__item">
               <div class="thumb">
-                <img
-                src="./img/comp/about/1x/img-2.jpg"
-                alt="графический дизайн"
-                width="370"
-                height="294"
-              /> <div class="thumb__label">
+              <picture>
+                <source srcset="./img/comp/about/1x/img-2.webp 1x, ./img/comp/about/2x/img@2x-2.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp">
+                <source srcset="./img/comp/about/1x/img-2.jpg 1x, ./img/comp/about/2x/img@2x-2.jpg 2x" media="(min-width: 1200px)">
+                <img src="./img/comp/about/1x/img-2.jpg" alt="Участник команды">
+              </picture>
+                <div class="thumb__label">
                <h3 class="thumb__description" > Дизайнерские решения</h3>
               </div>
               </div>
@@ -194,7 +206,7 @@
                       srcset="./img/tel/team/1x/img.webp 1x, ./img/tel/team/2x/img@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
                   <source 
                   srcset="./img/tel/team/1x/img.jpg 1x, ./img/tel/team/2x/img@2x.jpg 2x" media="(min-width: 480px)">
-                      <img
+                  <img
                   src="./img/tel/team/1x/img.jpg"
                   alt="Участник команды">
                 </picture>
@@ -567,5 +579,6 @@
       </div>
     </div>
     <script src="js/modal.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

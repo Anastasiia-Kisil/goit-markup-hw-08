@@ -1,12 +1,40 @@
-.burger__button {
+.mobile-menu {
+  position: fixed;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.burger-button {
   width: 40px;
   height: 40px;
   padding: 0;
   border: none;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .burger-button__icon {
   width: 24px;
   height: 16px;
+}
+.mobile-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
