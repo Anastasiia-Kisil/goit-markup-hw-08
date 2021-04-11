@@ -13,3 +13,8 @@
     pointer-events: none;
   }
 }
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}

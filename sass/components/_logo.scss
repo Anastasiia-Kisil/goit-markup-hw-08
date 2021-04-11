@@ -1,24 +1,23 @@
-@media screen and (max-width: 1199px) {
-  .logo {
-    display: inline-block;
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    padding-top: 16px;
-    padding-bottom: 16px;
+.logo {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-    &__text {
-      color: #000000;
+  &__text {
+    color: #000000;
 
-      &--light {
-        color: var(--back-color);
-      }
+    &--light {
+      color: var(--back-color);
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
@@ -29,6 +28,8 @@
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
