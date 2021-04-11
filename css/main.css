@@ -747,6 +747,9 @@ body {
   .contact {
     margin-left: auto;
   }
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .contact__link {
     font-weight: 500;
     font-size: 14px;
@@ -755,8 +758,8 @@ body {
     color: var(--text-color);
     transition: color 250ms var(--timing-function);
   }
-  .contact__item:not(:last-child) {
-    margin-bottom: 10px;
+  .contact__link:hover, .contact__link:focus {
+    color: var(--accent-color);
   }
   .contact__icon {
     margin-right: 8px;
@@ -796,9 +799,6 @@ body {
     line-height: 1.14;
     padding-top: var(--link-pt);
     padding-bottom: var(--link-pb);
-  }
-  .contact__link:hover, .contact__link:focus {
-    color: var(--accent-color);
   }
 }
 
@@ -1285,9 +1285,17 @@ body {
     margin-left: -30px;
   }
   .example__item {
+    display: flex;
     flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .example__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .example__wrapper {
+    flex-grow: 1;
   }
 }
 

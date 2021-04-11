@@ -56,6 +56,10 @@
   .contact {
     margin-left: auto;
 
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
     &__link {
       font-weight: 500;
       font-size: 14px;
@@ -63,9 +67,11 @@
       letter-spacing: 0.02em;
       color: var(--text-color);
       transition: color 250ms var(--timing-function);
-    }
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
 
     &__icon {
@@ -109,11 +115,6 @@
       line-height: 1.14;
       padding-top: var(--link-pt);
       padding-bottom: var(--link-pb);
-
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
     }
   }
 }
