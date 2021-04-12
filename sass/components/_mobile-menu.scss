@@ -4,8 +4,9 @@
   position: fixed;
   top: 0;
   right: 0;
+  transform: translateX(100%);
   max-width: 480px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 48px 40px;
   background-color: #fff;
@@ -19,6 +20,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateY(0) translateX(0);
   }
 
   &__icon {
@@ -150,6 +152,13 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mobile-menu {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
