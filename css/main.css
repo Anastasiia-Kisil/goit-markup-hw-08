@@ -1339,6 +1339,9 @@ body {
     margin-top: 30px;
     margin-left: 30px;
   }
+  .example__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .example__card {
     display: flex;
     flex-direction: column;
