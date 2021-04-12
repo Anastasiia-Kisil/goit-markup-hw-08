@@ -826,6 +826,13 @@ body {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .example__overlay {
+    font-size: 15px;
+    padding: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .example__item {
     flex-basis: calc(100% / 3 - 30px);

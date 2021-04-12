@@ -95,7 +95,14 @@
     }
   }
 }
-
+@media screen and (max-width: 425px) {
+  .example {
+    &__overlay {
+      font-size: 15px;
+      padding: 30px;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .example {
     &__item {
