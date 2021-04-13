@@ -98,6 +98,8 @@
 }
 .footer-form {
   &__title {
+    display: block;
+    margin-bottom: 20px;
     font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.14;
@@ -116,7 +118,6 @@
     color: var(--back-color);
     background-color: #2f303a;
     margin-bottom: 20px;
-    margin-top: 20px;
   }
 
   &__button {

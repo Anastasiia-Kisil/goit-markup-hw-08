@@ -367,6 +367,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .mobile-contact__tel {
+    font-size: 32px;
+  }
+  .mobile-social__item {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -431,10 +437,10 @@ body {
   .contact {
     margin-left: auto;
   }
-  .contact__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
   .contact__link {
+    display: flex;
+    padding: 5px;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -477,8 +483,6 @@ body {
   }
   .contact__link {
     color: var(--text-color);
-    display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 1.14;
     padding-top: var(--link-pt);
@@ -587,6 +591,8 @@ body {
 }
 
 .footer-form__title {
+  display: block;
+  margin-bottom: 20px;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.14;
@@ -605,7 +611,6 @@ body {
   color: var(--back-color);
   background-color: #2f303a;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .footer-form__button {
