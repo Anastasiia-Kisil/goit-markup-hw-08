@@ -2,14 +2,13 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
-  .navigation__list {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
+.navigation__list {
+  display: none;
 }
+.contact {
+  display: none;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
