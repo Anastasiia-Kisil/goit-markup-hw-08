@@ -212,7 +212,6 @@ body {
   top: 0;
   right: 0;
   transform: translateX(100%);
-  max-width: 480px;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
